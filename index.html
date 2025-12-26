@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilyas | AI & Data Science Engineer</title>
+    <meta name="description" content="Data Scientist specializing in GenAI, Multi-Agent Systems, and Biotechnology AI Solutions">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">I<span class="logo-dot">.</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Work</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#assistant" class="nav-link">AI Assistant</a>
+                <a href="#contact" class="nav-link nav-link-cta">Let's Talk</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-links">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#projects" class="mobile-link">Work</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#assistant" class="mobile-link">AI Assistant</a>
+            <a href="#contact" class="mobile-link">Let's Talk</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <canvas id="neuralCanvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Building Intelligent</span>
+                <span class="title-line title-highlight">Systems</span>
+                <span class="title-line">That Matter</span>
+            </h1>
+            <p class="hero-subtitle">
+                Data Scientist & AI Engineer at <span class="highlight">Bio-Techne</span> — 
+                crafting multi-agent systems, RAG architectures, and ML solutions 
+                that transform biotechnology workflows.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#assistant" class="btn btn-secondary">
+                    <span>Talk to My AI</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="1000000">0</span>
+                    <span class="stat-label">Documents Processed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="6">0</span>
+                    <span class="stat-label">AI Systems Built</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="100">0</span>
+                    <span class="stat-label">% Passion</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01 / About</span>
+                <h2 class="section-title">The Story Behind the Code</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="headshot.png" alt="Ilyas - AI Engineer" class="profile-img" onerror="this.src='https://api.dicebear.com/7.x/shapes/svg?seed=ilyas&backgroundColor=0a192f'">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="image-decoration"></div>
+                </div>
+                <div class="about-content">
+                    <p class="about-lead">
+                        I'm a Data Scientist who believes the most impactful AI isn't just technically impressive — 
+                        it solves real problems for real people.
+                    </p>
+                    <p class="about-text">
+                        At Bio-Techne, I lead GenAI initiatives on the Data Lab team, where I've built everything 
+                        from multi-agent sales intelligence platforms to production RAG systems that help 
+                        technical service teams find answers in seconds instead of hours.
+                    </p>
+                    <p class="about-text">
+                        My approach? <span class="text-highlight">Start small, iterate fast, and always keep the end user in mind.</span> 
+                        Whether I'm processing a million PDFs for data extraction or architecting a 
+                        complex agentic workflow, I focus on solutions that actually get deployed and used.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <div class="highlight-text">
+                                <strong>Multi-Agent Systems</strong>
+                                <span>LangGraph, AutoGen, Complex Orchestration</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <div class="highlight-text">
+                                <strong>Production ML</strong>
+                                <span>From POC to Deployment at Scale</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/>
+                                    <path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                                    <path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/>
+                                    <path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/>
+                                    <path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/>
+                                    <path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/>
+                                    <path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/>
+                                    <path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/>
+                                </svg>
+                            </div>
+                            <div class="highlight-text">
+                                <strong>Biotech Domain</strong>
+                                <span>Antibodies, Proteins, Life Sciences</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02 / Selected Work</span>
+                <h2 class="section-title">Projects That Pushed Boundaries</h2>
+                <p class="section-desc">A curated selection of AI systems I've architected and deployed</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: LuluBot -->
+                <article class="project-card project-featured" data-project="lulubot">
+                    <div class="project-visual">
+                        <div class="project-icon-large">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <circle cx="50" cy="30" r="15" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="25" cy="70" r="12" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="75" cy="70" r="12" stroke="currentColor" stroke-width="2"/>
+                                <line x1="50" y1="45" x2="30" y2="60" stroke="currentColor" stroke-width="2"/>
+                                <line x1="50" y1="45" x2="70" y2="60" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="50" cy="30" r="5" fill="currentColor"/>
+                                <circle cx="25" cy="70" r="4" fill="currentColor"/>
+                                <circle cx="75" cy="70" r="4" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="project-particles"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Multi-Agent System</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3 class="project-title">LuluBot</h3>
+                        <p class="project-subtitle">Sales Intelligence Platform</p>
+                        <p class="project-desc">
+                            An orchestrated multi-agent system combining web research, transaction analysis, 
+                            and marketing intelligence to identify untapped product opportunities. Built with 
+                            LangGraph for complex agent coordination.
+                        </p>
+                        <div class="project-tech">
+                            <span>LangGraph</span>
+                            <span>Azure OpenAI</span>
+                            <span>Databricks</span>
+                            <span>Salesforce</span>
+                        </div>
+                        <button class="project-expand" aria-label="View details">
+                            <span>View Architecture</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Project 2: Technical Service RAG -->
+                <article class="project-card" data-project="rag">
+                    <div class="project-visual">
+                        <div class="project-icon-large">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <rect x="15" y="20" width="30" height="40" rx="3" stroke="currentColor" stroke-width="2"/>
+                                <rect x="55" y="20" width="30" height="40" rx="3" stroke="currentColor" stroke-width="2"/>
+                                <line x1="20" y1="30" x2="40" y2="30" stroke="currentColor" stroke-width="2"/>
+                                <line x1="20" y1="38" x2="35" y2="38" stroke="currentColor" stroke-width="2"/>
+                                <line x1="20" y1="46" x2="38" y2="46" stroke="currentColor" stroke-width="2"/>
+                                <line x1="60" y1="30" x2="80" y2="30" stroke="currentColor" stroke-width="2"/>
+                                <line x1="60" y1="38" x2="75" y2="38" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="50" cy="80" r="12" stroke="currentColor" stroke-width="2"/>
+                                <path d="M45 80h10M50 75v10" stroke="currentColor" stroke-width="2"/>
+                                <line x1="30" y1="60" x2="42" y2="70" stroke="currentColor" stroke-width="2"/>
+                                <line x1="70" y1="60" x2="58" y2="70" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">RAG System</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3 class="project-title">Technical Service Agent</h3>
+                        <p class="project-subtitle">Production RAG for Support Teams</p>
+                        <p class="project-desc">
+                            A retrieval-augmented generation system that searches 100K+ Salesforce cases 
+                            and Egnyte documentation to answer technical questions instantly. Deployed 
+                            via Microsoft Teams for production use.
+                        </p>
+                        <div class="project-tech">
+                            <span>RAG</span>
+                            <span>Unity Catalog</span>
+                            <span>Egnyte</span>
+                            <span>MS Teams</span>
+                        </div>
+                        <button class="project-expand" aria-label="View details">
+                            <span>View Architecture</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Project 3: CoA Extraction -->
+                <article class="project-card" data-project="coa">
+                    <div class="project-visual">
+                        <div class="project-icon-large">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <rect x="20" y="10" width="60" height="80" rx="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M30 25h40M30 35h35M30 45h40M30 55h30M30 65h38M30 75h25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="75" cy="75" r="18" fill="var(--bg-primary)" stroke="currentColor" stroke-width="2"/>
+                                <path d="M68 75l5 5 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Data Engineering</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3 class="project-title">CoA Data Pipeline</h3>
+                        <p class="project-subtitle">Million-Scale PDF Processing</p>
+                        <p class="project-desc">
+                            Template-based extraction system processing ~1M Certificate of Analysis PDFs 
+                            with high accuracy. Automated data validation and structured output for 
+                            downstream analytics.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>PDF Parsing</span>
+                            <span>Databricks</span>
+                            <span>Delta Lake</span>
+                        </div>
+                        <button class="project-expand" aria-label="View details">
+                            <span>View Architecture</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Project 4: Antibody ML -->
+                <article class="project-card" data-project="antibody">
+                    <div class="project-visual">
+                        <div class="project-icon-large">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <path d="M50 15 L50 35" stroke="currentColor" stroke-width="3"/>
+                                <path d="M50 35 L30 55 L30 85" stroke="currentColor" stroke-width="3"/>
+                                <path d="M50 35 L70 55 L70 85" stroke="currentColor" stroke-width="3"/>
+                                <circle cx="50" cy="15" r="8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="30" cy="85" r="8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="70" cy="85" r="8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="20" cy="75" r="5" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="80" cy="75" r="5" stroke="currentColor" stroke-width="2"/>
+                                <line x1="25" y1="80" x2="30" y2="85" stroke="currentColor" stroke-width="2"/>
+                                <line x1="75" y1="80" x2="70" y2="85" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Machine Learning</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3 class="project-title">Antibody Pair Prediction</h3>
+                        <p class="project-subtitle">Semi-Supervised Learning Pipeline</p>
+                        <p class="project-desc">
+                            Teacher-student learning model with XGBoost to predict optimal capture-detect 
+                            antibody pairs. Leveraging SPR data from Carterra and Ella immunoassay platforms 
+                            for training.
+                        </p>
+                        <div class="project-tech">
+                            <span>XGBoost</span>
+                            <span>Semi-Supervised</span>
+                            <span>Carterra SPR</span>
+                            <span>scikit-learn</span>
+                        </div>
+                        <button class="project-expand" aria-label="View details">
+                            <span>View Architecture</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Project 5: LibreChat Deployment -->
+                <article class="project-card" data-project="librechat">
+                    <div class="project-visual">
+                        <div class="project-icon-large">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <rect x="15" y="25" width="70" height="50" rx="8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="35" cy="45" r="8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="65" cy="45" r="8" stroke="currentColor" stroke-width="2"/>
+                                <path d="M40 60 Q50 70 60 60" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <line x1="50" y1="10" x2="50" y2="25" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="50" cy="10" r="5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Infrastructure</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Enterprise ChatGPT</h3>
+                        <p class="project-subtitle">Internal AI Platform with LibreChat</p>
+                        <p class="project-desc">
+                            Deployed LibreChat as an internal ChatGPT alternative, providing secure 
+                            AI assistance across the organization with custom integrations and 
+                            enterprise authentication.
+                        </p>
+                        <div class="project-tech">
+                            <span>LibreChat</span>
+                            <span>Docker</span>
+                            <span>Azure</span>
+                            <span>SSO</span>
+                        </div>
+                        <button class="project-expand" aria-label="View details">
+                            <span>View Architecture</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Project 6: Graph Recommendations -->
+                <article class="project-card" data-project="graph">
+                    <div class="project-visual">
+                        <div class="project-icon-large">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <circle cx="50" cy="50" r="10" fill="currentColor"/>
+                                <circle cx="25" cy="25" r="8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="75" cy="25" r="8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="25" cy="75" r="8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="75" cy="75" r="8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="50" cy="15" r="6" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="85" cy="50" r="6" stroke="currentColor" stroke-width="2"/>
+                                <line x1="42" y1="44" x2="30" y2="30" stroke="currentColor" stroke-width="2"/>
+                                <line x1="58" y1="44" x2="70" y2="30" stroke="currentColor" stroke-width="2"/>
+                                <line x1="42" y1="56" x2="30" y2="70" stroke="currentColor" stroke-width="2"/>
+                                <line x1="58" y1="56" x2="70" y2="70" stroke="currentColor" stroke-width="2"/>
+                                <line x1="50" y1="40" x2="50" y2="21" stroke="currentColor" stroke-width="2"/>
+                                <line x1="60" y1="50" x2="79" y2="50" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Graph ML</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Graph Recommendation Engine</h3>
+                        <p class="project-subtitle">Network-Based Product Discovery</p>
+                        <p class="project-desc">
+                            Graph-based recommendation pipeline leveraging product relationships 
+                            and customer behavior patterns to surface relevant suggestions 
+                            with explainable reasoning.
+                        </p>
+                        <div class="project-tech">
+                            <span>Neo4j</span>
+                            <span>Graph Neural Networks</span>
+                            <span>Python</span>
+                            <span>NetworkX</span>
+                        </div>
+                        <button class="project-expand" aria-label="View details">
+                            <span>View Architecture</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03 / Expertise</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <p class="section-desc">Hover or tap to explore my technology stack</p>
+            </div>
+            
+            <div class="skills-container">
+                <!-- AI & ML -->
+                <div class="skill-category" data-category="ai">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/>
+                                <path d="M16 10v2a4 4 0 0 1-8 0v-2"/>
+                                <path d="M12 14v8"/>
+                                <path d="M8 18h8"/>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">AI & Machine Learning</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="expert">LangChain</span>
+                        <span class="skill-tag" data-level="expert">LangGraph</span>
+                        <span class="skill-tag" data-level="expert">RAG Systems</span>
+                        <span class="skill-tag" data-level="advanced">Multi-Agent Systems</span>
+                        <span class="skill-tag" data-level="advanced">XGBoost</span>
+                        <span class="skill-tag" data-level="advanced">Hugging Face</span>
+                        <span class="skill-tag" data-level="intermediate">Fine-tuning</span>
+                        <span class="skill-tag" data-level="intermediate">Semi-Supervised Learning</span>
+                        <span class="skill-tag" data-level="intermediate">Graph Neural Networks</span>
+                    </div>
+                </div>
+
+                <!-- Data Engineering -->
+                <div class="skill-category" data-category="data">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <ellipse cx="12" cy="6" rx="8" ry="3"/>
+                                <path d="M4 6v6c0 1.657 3.582 3 8 3s8-1.343 8-3V6"/>
+                                <path d="M4 12v6c0 1.657 3.582 3 8 3s8-1.343 8-3v-6"/>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Data Engineering</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="expert">Databricks</span>
+                        <span class="skill-tag" data-level="expert">SQL</span>
+                        <span class="skill-tag" data-level="expert">Delta Lake</span>
+                        <span class="skill-tag" data-level="advanced">Unity Catalog</span>
+                        <span class="skill-tag" data-level="advanced">Spark</span>
+                        <span class="skill-tag" data-level="advanced">ETL Pipelines</span>
+                        <span class="skill-tag" data-level="intermediate">Data Modeling</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & Infrastructure -->
+                <div class="skill-category" data-category="cloud">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Cloud & Infrastructure</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="expert">Azure OpenAI</span>
+                        <span class="skill-tag" data-level="advanced">Azure</span>
+                        <span class="skill-tag" data-level="intermediate">Docker</span>
+                        <span class="skill-tag" data-level="advanced">MLflow</span>
+                        <span class="skill-tag" data-level="intermediate">CI/CD</span>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skill-category" data-category="programming">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Programming</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="expert">Python</span>
+                        <span class="skill-tag" data-level="advanced">SQL</span>
+                        <span class="skill-tag" data-level="intermediate">Git</span>
+                        <span class="skill-tag" data-level="intermediate">REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Domain Expertise -->
+                <div class="skill-category" data-category="domain">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Domain Expertise</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="intermediate">Biotechnology</span>
+                        <span class="skill-tag" data-level="intermediate">Antibody Development</span>
+                        <span class="skill-tag" data-level="advanced">Life Sciences</span>
+                        <span class="skill-tag" data-level="intermediate">Protein Engineering</span>
+                        <span class="skill-tag" data-level="intermediate">Immunoassays</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category" data-category="tools">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                            </svg>
+                        </div>
+                        <h3 class="category-title">Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="expert">Salesforce</span>
+                        <span class="skill-tag" data-level="advanced">Egnyte</span>
+                        <span class="skill-tag" data-level="advanced">MS Teams</span>
+                        <span class="skill-tag" data-level="intermediate">LibreChat</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-legend">
+                <div class="legend-item">
+                    <span class="legend-dot expert"></span>
+                    <span>Expert</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-dot advanced"></span>
+                    <span>Advanced</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-dot intermediate"></span>
+                    <span>Intermediate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Assistant Section -->
+    <section class="assistant" id="assistant">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04 / Interactive</span>
+                <h2 class="section-title">Meet My AI Assistant</h2>
+                <p class="section-desc">Have questions? Want to schedule a call? Chat with my AI — it knows my schedule and can help you connect.</p>
+            </div>
+            
+            <div class="chat-container">
+                <div class="chat-window" id="chatWindow">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message assistant">
+                            <div class="message-avatar">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/>
+                                    <path d="M16 10v2a4 4 0 0 1-8 0v-2"/>
+                                    <path d="M12 14v8"/>
+                                    <path d="M8 18h8"/>
+                                </svg>
+                            </div>
+                            <div class="message-content">
+                                <p>Hi! I'm Ilyas's AI assistant. I can help you with:</p>
+                                <ul>
+                                    <li>📅 Schedule a meeting with Ilyas</li>
+                                    <li>💼 Learn about his work and projects</li>
+                                    <li>📧 Get his contact information</li>
+                                    <li>❓ Answer questions about his expertise</li>
+                                </ul>
+                                <p>How can I help you today?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-suggestions">
+                        <button class="suggestion-btn" data-message="I'd like to schedule a call">📅 Schedule a call</button>
+                        <button class="suggestion-btn" data-message="Tell me about Ilyas's experience">💼 About experience</button>
+                        <button class="suggestion-btn" data-message="What projects has Ilyas worked on?">🚀 View projects</button>
+                        <button class="suggestion-btn" data-message="How can I contact Ilyas?">📧 Contact info</button>
+                    </div>
+                    <div class="chat-input-container">
+                        <input type="text" id="chatInput" class="chat-input" placeholder="Type your message..." autocomplete="off">
+                        <button class="chat-send" id="chatSend" aria-label="Send message">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="chat-disclaimer">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 16v-4M12 8h.01"/>
+                    </svg>
+                    <span>Powered by Claude AI. Responses are AI-generated.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="section-header">
+                    <span class="section-tag">05 / Connect</span>
+                    <h2 class="section-title">Let's Build Something Together</h2>
+                    <p class="section-desc">Whether you have a project in mind, want to discuss AI opportunities, or just want to chat about the future of biotechnology — I'd love to hear from you.</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <a href="mailto:yasilhassan@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">yasilhassan@gmail.com</span>
+                        </div>
+                        <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="https://linkedin.com/in/ilyasalhassan" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">Let's connect</span>
+                        </div>
+                        <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="https://github.com/ilyas-hassan" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">View my code</span>
+                        </div>
+                        <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">Ilyas<span class="logo-dot">.</span></span>
+                    <p>Building intelligent systems that matter.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Work</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/ilyasalhassan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/ilyas-hassan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:yasilhassan@gmail.com" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Ilyas. Crafted with purpose.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
