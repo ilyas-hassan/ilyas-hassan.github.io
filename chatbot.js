@@ -13,7 +13,7 @@ const CHATBOT_CONFIG = {
     ownerCompany: "Bio-Techne",
     
     // Vercel API endpoint for Claude AI
-    apiEndpoint: "https://portfolio-api-ilyas-projects-aaca82b6.vercel.app/api/chat",
+    apiEndpoint: "https://portfolio-api-y19h.vercel.app/api/chat",
     
     // EmailJS Configuration
     emailjs: {
