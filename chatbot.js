@@ -18,7 +18,7 @@ const CHATBOT_CONFIG = {
     // EmailJS Configuration
     emailjs: {
         serviceId: "service_l6u1x6v",
-        templateId: "template_i120njq",
+        templateId: "template_1j2qgga",
         publicKey: "0_q3popHcAZ7zLc0n"
     },
     
