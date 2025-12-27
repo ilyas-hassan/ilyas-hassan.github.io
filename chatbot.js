@@ -13,12 +13,12 @@ const CHATBOT_CONFIG = {
     ownerCompany: "Bio-Techne",
     
     // Vercel API endpoint for Claude AI
-    apiEndpoint: "https://portfolio-api-y19h.vercel.app/api/chat",
+    apiEndpoint: "https://portfolio-api-ilyas-projects-aaca82b6.vercel.app/api/chat",
     
     // EmailJS Configuration
     emailjs: {
         serviceId: "service_l6u1x6v",
-        templateId: "template_1j2qgga",
+        templateId: "template_i120njq",
         publicKey: "0_q3popHcAZ7zLc0n"
     },
     
@@ -978,6 +978,21 @@ He typically responds within **24-48 hours**. In the meantime, feel free to expl
 document.addEventListener('DOMContentLoaded', () => {
     Chatbot.init();
 });
+
+// ==========================================
+// TRIGGER SCHEDULE FROM EXTERNAL BUTTON
+// ==========================================
+function triggerScheduleChat() {
+    // Small delay to let page scroll to chatbot section
+    setTimeout(() => {
+        // Start the lead capture flow
+        const response = LeadCapture.startCapture('schedule');
+        Chatbot.addMessage(response);
+    }, 500);
+}
+
+// Make it globally accessible
+window.triggerScheduleChat = triggerScheduleChat;
 
 // ==========================================
 // EXPORT FOR DEBUGGING (remove in production)
