@@ -382,6 +382,45 @@ function initProjectModals() {
 │                                                              │
 └─────────────────────────────────────────────────────────────┘`
         },
+        questionnaire: {
+            title: 'Questionnaire Automation',
+            subtitle: 'Customer Service Response Engine',
+            description: `An agentic system that drafts answers to lengthy customer and vendor questionnaires by
+            retrieving from product documentation and previously answered questions. What used to take the customer
+            service team up to a week of manual effort now turns around within a day, with humans reviewing and
+            approving the AI-drafted responses.`,
+            architecture: `┌─────────────────────────────────────────────────────────────┐
+│            QUESTIONNAIRE AUTOMATION ARCHITECTURE             │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│    Incoming Questionnaire                                    │
+│           │                                                  │
+│           ▼                                                  │
+│    ┌───────────────────┐                                     │
+│    │  Question Parser  │                                     │
+│    │  & Splitter       │                                     │
+│    └─────────┬─────────┘                                     │
+│              │  (per question)                               │
+│              ▼                                               │
+│    ┌───────────────────┐     ┌──────────────────┐            │
+│    │  Retrieval Agent  │────▶│  Knowledge Base  │            │
+│    │  (RAG)            │     │  Docs + Prior Q&A │            │
+│    └─────────┬─────────┘     └──────────────────┘            │
+│              │                                               │
+│              ▼                                               │
+│    ┌───────────────────┐                                     │
+│    │  Drafting Agent   │  (Azure OpenAI)                     │
+│    │  + Confidence     │                                     │
+│    └─────────┬─────────┘                                     │
+│              │                                               │
+│              ▼                                               │
+│    ┌───────────────────┐                                     │
+│    │  Human Review     │── Approve / Edit                    │
+│    │  & Approval       │                                     │
+│    └───────────────────┘                                     │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘`
+        },
         coa: {
             title: 'CoA Data Pipeline',
             subtitle: 'Million-Scale PDF Processing',
@@ -611,7 +650,7 @@ function initChatbot() {
    SCROLL ANIMATIONS
    ========================================== */
 function initScrollAnimations() {
-    const fadeElements = document.querySelectorAll('.section-header, .about-content, .about-image, .project-card, .skill-category, .contact-card');
+    const fadeElements = document.querySelectorAll('.section-header, .about-content, .about-image, .project-card, .skill-category, .contact-card, .speaking-photo, .speaking-content');
     
     fadeElements.forEach(el => {
         el.classList.add('fade-in');

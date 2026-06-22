@@ -516,6 +516,19 @@ const ChatResponses = {
         "Biotechnology & Life Sciences Domain",
         "Production ML Deployment"
     ],
+
+    // Speaking engagement
+    speaking: {
+        event: "Databricks AI Days",
+        location: "Minneapolis, MN",
+        talk: "Multi-Agent Sales Intelligence Platform",
+        topic: "how his team at Bio-Techne built and shipped a multi-agent sales intelligence platform on Databricks — taking agentic AI from prototype to production."
+    },
+
+    getSpeaking() {
+        const s = this.speaking;
+        return `Yes! Ilyas was an invited speaker at **${s.event}** in ${s.location}. 🎤\n\nHis talk, **"${s.talk},"** covered ${s.topic}\n\nYou can see photos from the session in the Speaking part of his site. Want me to connect you with him to chat about it?`;
+    },
     
     // Get project list response
     getProjectList() {
@@ -548,7 +561,12 @@ const ChatResponses = {
     // Detect intent from message
     detectIntent(message) {
         const msg = message.toLowerCase();
-        
+
+        // Speaking / conference intent (checked before schedule so "speak/talk" don't hijack it)
+        if (/databricks\s*ai\s*days|conference|summit|keynote|present(ed|ation)?|on\s+stage|speaking\s+(engagement|event)|did\s+(he|ilyas)\s+speak/.test(msg)) {
+            return 'speaking';
+        }
+
         // Schedule/meeting intent
         if (/schedul|meeting|call|chat|talk|speak|connect|book/.test(msg)) {
             return 'schedule';
@@ -613,6 +631,15 @@ const ChatResponses = {
             };
         }
         
+        // Handle speaking / conference questions
+        if (intent === 'speaking') {
+            return {
+                text: this.getSpeaking(),
+                action: 'offer_capture',
+                captureIntent: 'question'
+            };
+        }
+
         // Handle thanks
         if (intent === 'thanks') {
             return {

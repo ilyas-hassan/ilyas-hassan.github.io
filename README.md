@@ -4,6 +4,8 @@
 
 I build intelligent systems that actually get deployed — not just POCs that sit on a shelf.
 
+🎤 **Recent talk:** Speaker at **Databricks AI Days — Minneapolis** on shipping GenAI agents in life sciences.
+
 ---
 
 ## 🚀 What I Do
@@ -39,7 +41,7 @@ I build intelligent systems that actually get deployed — not just POCs that si
 ## 📫 Let's Connect
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-ilyas--hassan.github.io-00C7B7?style=flat&logo=netlify&logoColor=white)](https://ilyas-hassan.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-ilyashassan-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ilyashassan/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ilyasalhassan-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ilyasalhassan/)
 [![Email](https://img.shields.io/badge/Email-yasilhassan@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:yasilhassan@gmail.com)
 
 ---

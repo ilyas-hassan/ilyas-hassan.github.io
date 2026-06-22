@@ -7,7 +7,7 @@
     <!-- Primary Meta Tags -->
     <title>Ilyas | AI & Data Science Engineer</title>
     <meta name="title" content="Ilyas Hassan | AI & Data Science Engineer in Minnesota">
-    <meta name="description" content="Data Scientist & AI Engineer in Minneapolis, Minnesota specializing in Multi-Agent Systems, RAG Architectures, LangGraph, and Production ML. Building intelligent AI systems at Bio-Techne. Available for opportunities.">
+    <meta name="description" content="Data Scientist & AI Engineer in Minneapolis, Minnesota specializing in Multi-Agent Systems, RAG Architectures, LangGraph, and Production ML. Building intelligent AI systems at Bio-Techne and Databricks AI Days speaker. Available for opportunities.">
     <meta name="keywords" content="Data Scientist Minnesota, AI Engineer Minneapolis, Machine Learning Engineer, LangGraph Developer, RAG Architecture, Multi-Agent Systems, Bio-Techne, Python Developer Minnesota, ML Engineer Twin Cities, AI Consultant Minneapolis, Databricks, Azure OpenAI, XGBoost, NLP Engineer">
     <meta name="author" content="Ilyas Hassan">
     <meta name="robots" content="index, follow">
@@ -58,7 +58,7 @@
         "addressCountry": "US"
       },
       "sameAs": [
-        "https://www.linkedin.com/in/ilyashassan/",
+        "https://www.linkedin.com/in/ilyasalhassan/",
         "https://github.com/ilyas-hassan"
       ],
       "knowsAbout": [
@@ -70,9 +70,19 @@
         "Python",
         "Azure",
         "Databricks",
-        "Azure OpenAI"
+        "Azure OpenAI",
+        "Generative AI"
       ],
-      "description": "Data Scientist & AI Engineer specializing in Multi-Agent Systems, RAG Architectures, and Production ML at Bio-Techne in Minneapolis, Minnesota."
+      "performerIn": {
+        "@type": "Event",
+        "name": "Databricks AI Days — Minneapolis",
+        "description": "Speaker session on building and deploying GenAI agents and RAG systems in life sciences.",
+        "location": {
+          "@type": "Place",
+          "name": "Minneapolis, Minnesota"
+        }
+      },
+      "description": "Data Scientist & AI Engineer specializing in Multi-Agent Systems, RAG Architectures, and Production ML at Bio-Techne in Minneapolis, Minnesota. Databricks AI Days speaker."
     }
     </script>
     
@@ -99,6 +109,7 @@
             <div class="nav-links">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#projects" class="nav-link">Work</a>
+                <a href="#speaking" class="nav-link">Speaking</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#assistant" class="nav-link">AI Assistant</a>
                 <a href="#contact" class="nav-link nav-link-cta">Let's Talk</a>
@@ -116,6 +127,7 @@
         <div class="mobile-menu-links">
             <a href="#about" class="mobile-link">About</a>
             <a href="#projects" class="mobile-link">Work</a>
+            <a href="#speaking" class="mobile-link">Speaking</a>
             <a href="#skills" class="mobile-link">Skills</a>
             <a href="#assistant" class="mobile-link">AI Assistant</a>
             <a href="#contact" class="mobile-link">Let's Talk</a>
@@ -128,9 +140,18 @@
             <canvas id="neuralCanvas"></canvas>
         </div>
         <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Available for opportunities
+            <div class="hero-badges">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+                <a href="#speaking" class="hero-badge hero-badge-speaker">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                        <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/>
+                    </svg>
+                    Databricks AI Days Speaker
+                </a>
             </div>
             <h1 class="hero-title">
                 <span class="title-line">Building Intelligent</span>
@@ -138,9 +159,10 @@
                 <span class="title-line">That Matter</span>
             </h1>
             <p class="hero-subtitle">
-                Data Scientist & AI Engineer at <span class="highlight">Bio-Techne</span> — 
-                crafting multi-agent systems, RAG architectures, and ML solutions 
-                that transform biotechnology workflows.
+                Data Scientist & AI Engineer at <span class="highlight">Bio-Techne</span> —
+                crafting multi-agent systems, RAG architectures, and ML solutions
+                that transform biotechnology workflows. Recently took the stage at
+                <span class="highlight">Databricks AI Days</span> in Minneapolis.
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">
@@ -166,8 +188,8 @@
                     <span class="stat-label">AI Systems Built</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number" data-count="100">0</span>
-                    <span class="stat-label">% Passion</span>
+                    <span class="stat-number" data-count="100000">0</span>
+                    <span class="stat-label">Cases Searched</span>
                 </div>
             </div>
         </div>
@@ -255,11 +277,62 @@
         </div>
     </section>
 
+    <!-- Speaking Section -->
+    <section class="speaking" id="speaking">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02 / On Stage</span>
+                <h2 class="section-title">Databricks AI Days, Minneapolis</h2>
+                <p class="section-desc">Invited to speak on building and deploying multi-agent GenAI in life sciences — taking agentic systems from prototype to production on Databricks.</p>
+            </div>
+
+            <div class="speaking-grid">
+                <figure class="speaking-photo speaking-photo-main">
+                    <img src="Summit/summit-stage.jpg" alt="Ilyas Hassan presenting on stage at Databricks AI Days in Minneapolis" loading="lazy">
+                    <figcaption>Presenting to a packed room at the Databricks AI Days Minneapolis stop.</figcaption>
+                </figure>
+
+                <div class="speaking-content">
+                    <div class="speaking-event">
+                        <span class="event-logo">databricks</span>
+                        <span class="event-tag">AI Days · Minneapolis</span>
+                    </div>
+                    <h3 class="speaking-talk">Multi-Agent Sales Intelligence Platform</h3>
+                    <p class="speaking-text">
+                        I walked through how my team at <span class="text-highlight">Bio-Techne</span> built and
+                        shipped an orchestrated multi-agent system — combining web research, transaction analysis,
+                        and marketing intelligence on Databricks to surface untapped product opportunities for the
+                        sales organization.
+                    </p>
+                    <ul class="speaking-takeaways">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            Orchestrating specialized agents with LangGraph
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            Grounding agents in enterprise data with RAG at scale
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            Taking agentic AI from prototype to production
+                        </li>
+                    </ul>
+                </div>
+
+                <figure class="speaking-photo speaking-photo-wide">
+                    <img src="Summit/summit-room.jpg" alt="The audience at Databricks AI Days Minneapolis during Ilyas Hassan's session" loading="lazy">
+                    <figcaption>A full house at Databricks AI Days.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">02 / Selected Work</span>
+                <span class="section-tag">03 / Selected Work</span>
                 <h2 class="section-title">Projects That Pushed Boundaries</h2>
                 <p class="section-desc">A curated selection of AI systems I've architected and deployed</p>
             </div>
@@ -336,10 +409,14 @@
                         <h3 class="project-title">Technical Service Agent</h3>
                         <p class="project-subtitle">Production RAG for Support Teams</p>
                         <p class="project-desc">
-                            A retrieval-augmented generation system that searches 100K+ Salesforce cases 
-                            and Egnyte documentation to answer technical questions instantly. Deployed 
+                            A retrieval-augmented generation system that searches 100K+ Salesforce cases
+                            and Egnyte documentation to answer technical questions instantly. Deployed
                             via Microsoft Teams for production use.
                         </p>
+                        <div class="project-impact">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            <span><strong>Hours → minutes</strong> to resolve technical-service questions</span>
+                        </div>
                         <div class="project-tech">
                             <span>RAG</span>
                             <span>Unity Catalog</span>
@@ -355,7 +432,53 @@
                     </div>
                 </article>
 
-                <!-- Project 3: CoA Extraction -->
+                <!-- Project 3: Questionnaire Automation -->
+                <article class="project-card" data-project="questionnaire">
+                    <div class="project-visual">
+                        <div class="project-icon-large">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <rect x="22" y="12" width="56" height="76" rx="5" stroke="currentColor" stroke-width="2"/>
+                                <rect x="38" y="6" width="24" height="12" rx="3" stroke="currentColor" stroke-width="2"/>
+                                <path d="M32 34l5 5 9-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M32 54l5 5 9-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="52" y1="32" x2="70" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="52" y1="52" x2="70" y2="52" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="32" y1="72" x2="68" y2="72" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Agentic Automation</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3 class="project-title">Questionnaire Automation</h3>
+                        <p class="project-subtitle">Customer Service Response Engine</p>
+                        <p class="project-desc">
+                            An agentic system that drafts answers to lengthy customer questionnaires by
+                            retrieving from product documentation and prior responses — turning a manual,
+                            multi-day task into a same-day workflow for the customer service team.
+                        </p>
+                        <div class="project-impact">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            <span><strong>Up to a week → within a day</strong> to complete questionnaires</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Multi-Agent</span>
+                            <span>RAG</span>
+                            <span>Azure OpenAI</span>
+                            <span>Databricks</span>
+                        </div>
+                        <button class="project-expand" aria-label="View details">
+                            <span>View Architecture</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Project 4: CoA Extraction -->
                 <article class="project-card" data-project="coa">
                     <div class="project-visual">
                         <div class="project-icon-large">
@@ -394,7 +517,7 @@
                     </div>
                 </article>
 
-                <!-- Project 4: Antibody ML -->
+                <!-- Project 5: Antibody ML -->
                 <article class="project-card" data-project="antibody">
                     <div class="project-visual">
                         <div class="project-icon-large">
@@ -439,7 +562,7 @@
                     </div>
                 </article>
 
-                <!-- Project 5: LibreChat Deployment -->
+                <!-- Project 6: LibreChat Deployment -->
                 <article class="project-card" data-project="librechat">
                     <div class="project-visual">
                         <div class="project-icon-large">
@@ -480,7 +603,7 @@
                     </div>
                 </article>
 
-                <!-- Project 6: Graph Recommendations -->
+                <!-- Project 7: Graph Recommendations -->
                 <article class="project-card" data-project="graph">
                     <div class="project-visual">
                         <div class="project-icon-large">
@@ -550,7 +673,7 @@
     <section class="skills" id="skills">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">03 / Expertise</span>
+                <span class="section-tag">04 / Expertise</span>
                 <h2 class="section-title">Technical Arsenal</h2>
                 <p class="section-desc">Hover or tap to explore my technology stack</p>
             </div>
@@ -704,7 +827,7 @@
     <section class="assistant" id="assistant">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">04 / Interactive</span>
+                <span class="section-tag">05 / Interactive</span>
                 <h2 class="section-title">Meet My AI Assistant</h2>
                 <p class="section-desc">Have questions? Want to schedule a call? Chat with my AI — it knows my schedule and can help you connect.</p>
             </div>
@@ -765,7 +888,7 @@
         <div class="container">
             <div class="contact-content">
                 <div class="section-header">
-                    <span class="section-tag">05 / Connect</span>
+                    <span class="section-tag">06 / Connect</span>
                     <h2 class="section-title">Let's Build Something Together</h2>
                     <p class="section-desc">Whether you have a project in mind, want to discuss AI opportunities, or just want to chat about the future of biotechnology or AI in general — I'd love to hear from you.</p>
                 </div>
@@ -787,7 +910,7 @@
                         </svg>
                     </a>
                     
-                    <a href="https://linkedin.com/in/ilyasalhassan" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <a href="https://www.linkedin.com/in/ilyasalhassan" target="_blank" rel="noopener noreferrer" class="contact-card">
                         <div class="contact-icon">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
@@ -797,7 +920,7 @@
                         </div>
                         <div class="contact-info">
                             <span class="contact-label">LinkedIn</span>
-                            <span class="contact-value">Let's connect</span>
+                            <span class="contact-value">Full background & résumé</span>
                         </div>
                         <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -838,7 +961,7 @@
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-social">
-                    <a href="https://linkedin.com/in/ilyasalhassan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/ilyasalhassan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
                             <rect x="2" y="9" width="4" height="12"/>
